@@ -1,7 +1,11 @@
 ## The function makeCacheMatrix creates a special "matrix"
 ## object that can store its own inverse.
 
-## Write a short comment describing this function
+## The set function sets the Inv to NULL, as the inverse has not yet
+## been computed.
+## The get function reurns the special matrix
+## The setinv function calls the Solve function
+## the getinv function calculates the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
         Inv <- NULL
@@ -19,7 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## The function cacheSolve computes the inverse of the special
-## "matrix" retyrned by makeCacheMatrix. If the inverse has already
+## "matrix" returned by makeCacheMatrix. If the inverse has already
 ## been calculated (and the matrix has not changed), then cachSolve
 ## should retrieve the inverse from the cache.
 
